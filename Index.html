@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paryceos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(90deg, #ff0050, #00f0ff, #a100ff);
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1559475554-38fda7b203ac?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      text-align: center;
+      padding: 8rem 2rem;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin-top: 1rem;
+    }
+    .btn {
+      background: #ff0050;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      margin-top: 2rem;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    section h3 {
+      font-size: 2rem;
+      color: #ffd700;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    .evento {
+      background: #1a1a1a;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 2rem auto;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .galeria img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #000;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .social {
+      margin-top: 1rem;
+    }
+    .social a {
+      margin: 0 0.5rem;
+      color: #00f0ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PARYCEOS</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#evento">Próximo Evento</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>26 DE JULIO</h2>
+    <p>Más que una fiesta, una experiencia única producida por Paryceos.</p>
+    <button class="btn" onclick="document.getElementById('evento').scrollIntoView({behavior: 'smooth'})">Ver Próximo Evento</button>
+  </section>
+
+  <section id="evento">
+    <h3>Próximo Evento</h3>
+    <div class="evento">
+      <p><strong>Fecha:</strong> 26 de julio</p>
+      <p><strong>Hora:</strong> 22:30 – 04:00</p>
+      <p><strong>DJs:</strong> @DJPOPE y @DJMATRIX</p>
+      <p><strong>Ubicación:</strong> Calle Blanco Encalada con Av. Victoria</p>
+      <p><strong>Preventa:</strong> $3.000 | Estacionamiento: $5.000</p>
+      <p><strong>Edad mínima:</strong> +17</p>
+      <p><strong>Entrada con lista</strong></p>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h3>Galería</h3>
+    <div class="galeria">
+      <img src="https://source.unsplash.com/random/300x300/?party" alt="Galería Paryceos">
+      <img src="https://source.unsplash.com/random/300x301/?music" alt="Galería Paryceos">
+      <img src="https://source.unsplash.com/random/300x302/?club" alt="Galería Paryceos">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>Síguenos en <strong>@Paryceos</strong></p>
+    <div class="social">
+      <a href="https://instagram.com/Paryceos" target="_blank">Instagram</a>
+      <a href="mailto:paryceos@gmail.com">Correo: paryceos@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Paryceos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
